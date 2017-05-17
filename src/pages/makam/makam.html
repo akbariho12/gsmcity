@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Makam
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+ <h4>Daftar Makam Kota Malang </h4>
+
+<ion-list>
+<ion-item-sliding class="text" *ngFor="let kuburan of makam | async">
+	<ion-item>
+	   	<p>Nama :  {{kuburan.Nama}}</p>
+	   	<p>Alamat :  {{kuburan.Alamat}}</p>
+  	</ion-item>
+  	<ion-item-options side="left">
+      <button ion-button color="secondary" (click)="loadMap(kuburan.Latitude,kuburan.Longitude)">
+      	<ion-icon name="md-eye">Lihat</ion-icon>
+      </button>
+    </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+</ion-content>

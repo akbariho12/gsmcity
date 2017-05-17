@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Taman
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+ <h4>Daftar Taman Kota Malang </h4>
+
+<ion-list>
+<ion-item-sliding class="text" *ngFor="let taman of tamans | async">
+	<ion-item>
+	   	<p>Nama :  {{taman.Nama}}</p>
+	   	<p>Alamat :  {{taman.Alamat}}</p>
+  	</ion-item>
+  	<ion-item-options side="left">
+      <button ion-button color="secondary" (click)="loadMap(taman.Latitude,taman.Longitude)">
+      	<ion-icon name="md-eye">Lihat</ion-icon>
+      </button>
+    </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+</ion-content>

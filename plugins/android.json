@@ -1,0 +1,47 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-firebase": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-googlemaps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyCfxKKqu3fef2G4wObb-0o9muP31-xVlRc",
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.gsmcity502589"
+        }
+    }
+}

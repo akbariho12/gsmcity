@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Pulau dan Media Jalan
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+ <h4>Daftar Media Jalan dan Pulau Kota Malang </h4>
+
+<ion-list>
+<ion-item-sliding class="text" *ngFor="let media of mediajalan | async">
+	<ion-item>
+	   	<p>Alamat :  {{media.Nama}}</p>
+  	</ion-item>
+  	<ion-item-options side="left">
+      <button ion-button color="secondary" (click)="loadMap(media.Latitude,media.longitude)">
+      	<ion-icon name="md-eye">Lihat</ion-icon>
+      </button>
+    </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+</ion-content>

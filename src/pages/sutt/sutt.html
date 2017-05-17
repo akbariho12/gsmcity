@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SUTT
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+ <h4>Daftar SUTT Kota Malang </h4>
+
+<ion-list>
+<ion-item-sliding class="text" *ngFor="let sut of sutt | async">
+	<ion-item>
+	   	<p>Alamat :  {{sut.Alamat}}</p>
+  	</ion-item>
+  	<ion-item-options side="left">
+      <button ion-button color="secondary" (click)="loadMap(sut.Latitude,sut.Longitude)">
+      	<ion-icon name="md-eye">Lihat</ion-icon>
+      </button>
+    </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Sumber Mata Air
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+ <h4>Daftar Sumber Air Kota Malang </h4>
+
+<ion-list>
+<ion-item-sliding class="text" *ngFor="let ai of mataair | async">
+	<ion-item>
+	   	<p>Alamat :  {{ai.Alamat}}</p>
+  	</ion-item>
+  	<ion-item-options side="left">
+      <button ion-button color="secondary" (click)="loadMap(ai.latitude,ai.Longitude)">
+      	<ion-icon name="md-eye">Lihat</ion-icon>
+      </button>
+    </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+</ion-content>
